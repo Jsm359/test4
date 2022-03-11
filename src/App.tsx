@@ -1,11 +1,18 @@
 import React from 'react';
-import { Button } from './components/button/Button'
+import { Layout } from 'antd';
+import { AppRouter } from './components/AppRouter/AppRouter';
+import { Navbar } from './components/navbar/Navbar';
+import  './App.css'
 
-function App() {
+
+export const App = () => {
   return (
-    <div className="App">
-      <Button />
-    </div>
+    <Layout>
+      <Navbar/>
+      <Layout.Content>
+        <AppRouter />
+      </Layout.Content>
+    </Layout>
   );
 }
 
