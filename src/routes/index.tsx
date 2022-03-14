@@ -1,6 +1,6 @@
 import React from "react";
 import { Navigate } from "react-router-dom";
-import { Calendar } from "../pages/CalendarPage/Calendar";
+import { CalendarPage } from "../pages/CalendarPage/Calendar";
 import { Login } from "../pages/LoginPage/Login";
 
 
@@ -15,6 +15,6 @@ export const publicRoutes = [
 ]
 
 export const privateRoutes = [
-  {path: RouteNames.CALENDAR, element: <Calendar />},
+  {path: RouteNames.CALENDAR, element: <CalendarPage />},
   {path: '*', element: <Navigate to='/'/>},
 ]
